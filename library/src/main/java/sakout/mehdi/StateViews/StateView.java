@@ -315,11 +315,12 @@ public class StateView extends ViewFlipper {
 
         if (color != null) {
             mImageView.setColorFilter(color, android.graphics.PorterDuff.Mode.SRC_IN);
-        } else {
-            TypedValue typedValue = new TypedValue();
-            getContext().getTheme().resolveAttribute(R.attr.colorAccent, typedValue, true);
-            mImageView.setColorFilter(typedValue.data, android.graphics.PorterDuff.Mode.SRC_IN);
         }
+//        else {
+//            TypedValue typedValue = new TypedValue();
+//            getContext().getTheme().resolveAttribute(R.attr.colorAccent, typedValue, true);
+//            mImageView.setColorFilter(typedValue.data, android.graphics.PorterDuff.Mode.SRC_IN);
+//        }
 
         if (iconSize > 0) {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(iconSize, iconSize);
